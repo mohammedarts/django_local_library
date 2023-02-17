@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!#a3cup@1$8obt2_+&
 #DEBUG = False
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['.railway.com', '127.0.0.1']
+ALLOWED_HOSTS = ['web-production-95c4.up.railway.app', '127.0.0.1']
 
 
 # Application definition
@@ -146,4 +146,4 @@ STATIC_URL = '/static/'
 #Simplified static file serving
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-CSRF_TRUSTED_ORIGINS = ['https://*.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://web-production-95c4.up.railway.app']
